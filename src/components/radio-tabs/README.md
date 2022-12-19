@@ -1,0 +1,7 @@
+# Radio tabs
+
+First, you will need to create a `Tabs` component that will hold the logic for rendering the tab buttons and the corresponding tab panels. You can do this by using a state variable to keep track of the currently selected tab, and using an array of objects to store the data for each tab (e.g. label, content, etc.).
+
+Next, you can use the `Tabs` component in your app by passing in an array of `Tab` objects as the `tabs` prop. Each `Tab` object should have a `label` and a `content` prop. The `label` will be used to render the radio button label, and the `content` will be displayed in the tab panel when the radio button is selected.
+
+To make the tabbed interface accessible, you can use the `id`, `name`, and `htmlFor` attributes as shown in the example above. These attributes allow screen readers to properly associate the radio buttons with their labels and to interpret the tabbed interface. Additionally, you can use the `role` and `aria` attributes to further improve accessibility. For example, you can give the tab panel a `role` of `tabpanel` and the radio buttons a `role` of `tab` to help screen readers interpret the tabbed interface and assist users in navigating the tabs.
